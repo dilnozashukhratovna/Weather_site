@@ -70,29 +70,38 @@
         <h1>{{ translateTime(store?.weatherData?.current?.sunrise) }}</h1>
       </div>
       <div class="box__extra-item">
-        <i class="uil uil-sun box__extra-icon"></i>
-        <span>Sunrise</span>
-        <h1>{{ translateTime(store?.weatherData?.current?.sunrise) }}</h1>
+        <i class="uil uil-sunset box__extra-icon"></i>
+        <span>Sunset</span>
+        <h1>{{ translateTime(store?.weatherData?.current?.sunset) }}</h1>
       </div>
       <div class="box__extra-item">
-        <i class="uil uil-sun box__extra-icon"></i>
-        <span>Sunrise</span>
-        <h1>{{ translateTime(store?.weatherData?.current?.sunrise) }}</h1>
+        <i class="uil uil-wind box__extra-icon"></i>
+        <span>Wind</span>
+        <h1>
+          {{ roundTemperature(store?.weatherData?.current?.wind_speed) }}
+          <span class="box__extra-item_span">km/h</span>
+        </h1>
       </div>
       <div class="box__extra-item">
-        <i class="uil uil-sun box__extra-icon"></i>
-        <span>Sunrise</span>
-        <h1>{{ translateTime(store?.weatherData?.current?.sunrise) }}</h1>
+        <i class="uil uil-eye box__extra-icon"></i>
+        <span>Visibility</span>
+        <h1>
+          {{ translateVisibility(store?.weatherData?.current?.visibility) }}
+          <span class="box__extra-item_span">km</span>
+        </h1>
       </div>
       <div class="box__extra-item">
-        <i class="uil uil-sun box__extra-icon"></i>
-        <span>Sunrise</span>
-        <h1>{{ translateTime(store?.weatherData?.current?.sunrise) }}</h1>
+        <i class="uil uil-tear box__extra-icon"></i>
+        <span>Humidity</span>
+        <h1>{{ store?.weatherData?.current?.humidity }}%</h1>
       </div>
       <div class="box__extra-item">
-        <i class="uil uil-sun box__extra-icon"></i>
-        <span>Sunrise</span>
-        <h1>{{ translateTime(store?.weatherData?.current?.sunrise) }}</h1>
+        <i class="uil uil-dashboard box__extra-icon"></i>
+        <span>Pressure</span>
+        <h1>
+          {{ store?.weatherData?.current?.pressure }}
+          <span class="box__extra-item_span">hPa</span>
+        </h1>
       </div>
     </div>
   </div>
@@ -129,6 +138,10 @@ const sortName = (name) => {
   if (name) {
     return name.split("/").slice(1, 2).join("");
   }
+};
+
+const translateVisibility = (num) => {
+  return num / 250;
 };
 
 const getIcon = (icon) => {
@@ -269,7 +282,11 @@ const getIcon = (icon) => {
 }
 
 .box__extra-icon {
-  font-size: var(--h2-font-size);
+  font-size: var(--big-font-size);
+}
+
+.box__extra-item_span {
+  font-size: var(--normal-font-size);
 }
 
 @media screen and (max-width: 767px) {
