@@ -289,11 +289,6 @@ const getIcon = (icon) => {
     margin-top: var(--mb-1-5);
   }
 
-  .box__daily {
-    display: flex;
-    flex-direction: column;
-  }
-
   .right {
     display: flex;
     align-items: center;
@@ -308,6 +303,11 @@ const getIcon = (icon) => {
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
+  }
+
+  .box__daily {
+    display: flex;
+    flex-direction: column;
   }
 }
 </style>
