@@ -9,7 +9,7 @@
 <style lang="scss">
 body {
   font-family: var(--body-font);
-  // background-color: #2b235a;
+  background-color: #75b4e3;
   background-image: url("./src/assets/images/wallpaperflare.com_wallpaper\ copy\ 3.jpg");
   background-repeat: repeat-y;
   background-size: cover;
