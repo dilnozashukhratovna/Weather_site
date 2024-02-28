@@ -98,7 +98,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import { useStore } from "../store/store";
 const store = useStore();
 
@@ -145,7 +144,6 @@ const getIcon = (icon) => {
   grid-template-columns: repeat(2, 1fr);
 }
 .box {
-  //   width: 50%;
   display: flex;
   flex-direction: column;
   margin: left;
@@ -174,8 +172,6 @@ const getIcon = (icon) => {
 .right {
   width: 45%;
   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
 }
 
 .box__current-city_name {
@@ -195,9 +191,6 @@ const getIcon = (icon) => {
 
 .box__current-weather_desc {
   font-size: var(--small-font-size);
-  //   display: flex;
-  //   justify-content: space-around;
-  //   gap: 1rem;
 }
 
 .box__current-icon {
