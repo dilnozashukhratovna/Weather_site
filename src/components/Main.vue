@@ -127,6 +127,8 @@ const getIcon = (icon) => {
 .right {
   width: 45%;
   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
 }
 
 .box__current-city_name {
@@ -210,6 +212,12 @@ const getIcon = (icon) => {
   .box__daily {
     display: flex;
     flex-direction: column;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
