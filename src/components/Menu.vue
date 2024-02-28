@@ -27,16 +27,16 @@ const selectRegion = (region) => {
 
 const regions = ref([
   { name: "Tashkent", point: { lat: 41.3123363, lon: 69.2787079 } },
-  { name: "Andijon", point: { lat: 40.7833471, lon: 72.3506746 } },
-  { name: "Namangan", point: { lat: 40.9996482, lon: 71.6726238 } },
-  { name: "Sirdaryo", point: { lat: 40.8309135, lon: 68.6661865 } },
+  { name: "Andijon", point: { lat: 40.7821, lon: 72.3442 } },
+  { name: "Namangan", point: { lat: 40.9983, lon: 71.6726 } },
+  { name: "Sirdaryo", point: { lat: 40.8436, lon: 68.6617 } },
   { name: "Surxondaryo", point: { lat: 38.0, lon: 67.295999 } },
-  { name: "Qashqadaryo", point: { lat: 38.9248284, lon: 65.7538819 } },
+  { name: "Qashqadaryo", point: { lat: 38.5833, lon: 65.7538819 } },
   { name: "Xorazm", point: { lat: 41.529928, lon: 60.61665 } },
-  { name: "Navoiy", point: { lat: 40.1034582, lon: 65.3734221 } },
+  { name: "Navoiy", point: { lat: 40.0844, lon: 65.3792 } },
   { name: "Buxoro", point: { lat: 39.7747, lon: 64.4286 } },
   { name: "Qoraqalpog'iston", point: { lat: 40.3842, lon: 71.7843 } },
-  { name: "Farg'ona", point: { lat: 40.7833471, lon: 72.3506746 } },
+  { name: "Farg'ona", point: { lat: 40.3842, lon: 71.7843 } },
   { name: "Samarqand", point: { lat: 39.6550017, lon: 66.9756954 } },
 ]);
 </script>

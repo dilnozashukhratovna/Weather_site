@@ -50,14 +50,6 @@ const menu_open = () => {
   font-size: var(--h1-font-size);
 }
 
-// @media screen and (min-width: 767px) {
-//   .navbar__menu {
-//     opacity: 0;
-//     visibility: hidden;
-//     display: none;
-//   }
-// }
-
 @media screen and (max-width: 477px) {
   .navbar__logo {
     opacity: 0;

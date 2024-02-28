@@ -16,16 +16,6 @@
           <h1 class="box__current-weather_temp">
             {{ roundTemperature(store?.weatherData?.current?.temp) }}&deg;
           </h1>
-          <!-- <div class="box__current-weather_desc">
-          <span
-            ><i class="uil uil-sun box__current-icon"></i> Sunrise:
-            {{ translateTime(store?.weatherData?.current?.sunrise) }}</span
-          >
-          <span>
-            <i class="uil uil-sunset box__current-icon"></i> Sunset:
-            {{ translateTime(store?.weatherData?.current?.sunset) }}
-          </span>
-        </div> -->
           <p class="box__current-weather_desc">
             <i class="uil uil-info-circle"></i>
             {{ store?.weatherData?.current?.weather[0]?.main }}
